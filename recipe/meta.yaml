@@ -1,4 +1,4 @@
-{% set version = "0.3.1" %}
+{% set version = "0.3.1.1" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/pmdplyr_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/pmdplyr/pmdplyr_{{ version }}.tar.gz
-  sha256: f673cd67b19ac6846becf3c41e6e2c44cdd9849c26791d42b8397dd76784a584
+  sha256: 31afd31d36873fdf6ba4798d3d835669f3e18dbef96fbed50919f78bf172c080
 
 build:
   merge_build_host: true  # [win]
-  number: 1
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
@@ -54,8 +54,7 @@ test:
 about:
   home: https://nickch-k.github.io/pmdplyr, https://github.com/NickCH-K/pmdplyr
   license: MIT
-  summary: Using the 'dplyr' package as a base, adds a family of functions designed to make manipulating panel data easier. Allows the addition of indexing variables
-    to a tibble to create a pibble, and the manipulation of data based on those indexing variables.
+  summary: Using the 'dplyr' package as a base, adds a family of functions designed to make manipulating panel data easier. Allows the addition of indexing variables to a tibble to create a pibble, and the manipulation of data based on those indexing variables.
   license_file:
     - {{ environ["PREFIX"] }}/lib/R/share/licenses/MIT
     - LICENSE
