@@ -1,4 +1,4 @@
-{% set version = "0.3.1.1" %}
+{% set version = "0.3.3" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/pmdplyr_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/pmdplyr/pmdplyr_{{ version }}.tar.gz
-  sha256: 31afd31d36873fdf6ba4798d3d835669f3e18dbef96fbed50919f78bf172c080
+  sha256: 0a874fb94181e060e551501f6cb918ba25b83ad95488125eb490a0d83cc636bf
 
 build:
   merge_build_host: true  # [win]
