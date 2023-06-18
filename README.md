@@ -1,11 +1,11 @@
-About r-pmdplyr
-===============
+About r-pmdplyr-feedstock
+=========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-pmdplyr-feedstock/blob/main/LICENSE.txt)
 
 Home: https://nickch-k.github.io/pmdplyr, https://github.com/NickCH-K/pmdplyr
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-pmdplyr-feedstock/blob/main/LICENSE.txt)
 
 Summary: Using the 'dplyr' package as a base, adds a family of functions designed to make manipulating panel data easier. Allows the addition of indexing variables to a tibble to create a pibble, and the manipulation of data based on those indexing variables.
 
