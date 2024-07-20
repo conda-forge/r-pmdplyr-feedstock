@@ -1,6 +1,5 @@
 {% set version = "0.3.3" %}
 {% set posix = 'm2-' if win else '' %}
-{% set native = 'm2w64-' if win else '' %}
 
 package:
   name: r-pmdplyr
@@ -13,8 +12,7 @@ source:
   sha256: 0a874fb94181e060e551501f6cb918ba25b83ad95488125eb490a0d83cc636bf
 
 build:
-  merge_build_host: true  # [win]
-  number: 2
+  number: 3
   noarch: generic
   rpaths:
     - lib/R/lib/
